@@ -1,0 +1,101 @@
+#extension-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+}
+
+#extension-container.show {
+  display: block;
+}
+
+/* #app {
+  width: 314px;
+  height: 440px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+  border-radius: 0 10px 10px 0;
+  z-index: 9999;
+} */
+
+/* contentscript.css */
+
+.image {
+  height: 57px;
+  width: 192px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  transform: translateX(75%);
+}
+
+.hover {
+  transform: translateX(9%);
+}
+
+/* Butoooonnnnnn */
+
+.image-container {
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.dropdown-container {
+  position: absolute;
+  top: -70px;
+  left: -175px;
+  width: 200px;
+  transition: opacity 0.3s;
+  height: 100%;
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.flex {
+  display: flex;
+}
+
+.dropdown-row {
+  display: flex;
+  align-items: center;
+  background-color: #3b82f6;
+  color: white;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 5px 10px;
+  flex: 1;
+  margin-bottom: 10px;
+}
+
+.dropdown-image {
+  margin-right: 8px;
+}
+
+/* dragButton */
+
+.dragBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 22.41px;
+  height: 22.41px;
+  opacity: 0.9;
+  top: -22px;
+  left: -20px;
+  border-radius: 13px;
+  background-color: #858585;
+  cursor: pointer;
+}

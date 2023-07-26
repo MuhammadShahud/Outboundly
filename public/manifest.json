@@ -1,0 +1,48 @@
+{
+  "manifest_version": 3,
+  "name": "Outboundly - LinkedIn Prospecting with AI",
+  "description": "Instantly analyze LinkedIn profiles / websites and generate a personalized cold outreach message in one click using AI",
+  "version": "0.2.8",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.linkedin.com/*"],
+      "js": ["contentscript.js"],
+      "css": ["contentscript.css"],
+      "type": "module"
+    },
+    {
+      "matches": ["https://www.linkedin.com/in/*"],
+      "js": ["contentBtn.js"],
+      "css": ["contentscript.css"]
+    }
+  ],
+  "web_accessible_resources": [
+      {
+        "resources": ["index.html","dragLogo.svg","l1.png","clickme.svg","compose.svg","profileOut.svg","clickme.png"],
+        "matches": ["<all_urls>"]
+      }
+    ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  },
+  "action": {
+    "default_icon": {
+      "128": "128.png"
+    },
+    "default_title": "Outboundly"
+  },
+  "icons": {
+    "128": "128.png"
+  },
+  "permissions": [
+    "storage",
+    "scripting",
+    "activeTab",
+    "tabs",
+    "unlimitedStorage"
+  ],
+  "host_permissions": ["*://*.linkedin.com/*"]
+}

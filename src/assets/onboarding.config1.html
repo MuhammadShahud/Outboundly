@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Outboundly Onboarding</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet">
+</head>
+
+<body>
+	<h1>Thanks for choosing Outboundly!</h1>
+	<p>Say goodbye to generic messages - Outboundly can do the hard work for you!</p>
+	<h3 class="notice">Important - In order to use this extension we need your permission to run on LinkedIn</h3>
+	<div class="large-button" onClick="requestPermission">
+		<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+		Grant access to Outboundly on LinkedIn.com
+	</div>
+
+
+
+
+	<p>Once you've granted access, you'll be able to use Outboundly on LinkedIn.com</p>
+	<video width="720" height="auto" controls>
+		<source src="https://outboundly.app/gettingstarted.mp4" type="video/mp4">
+		Your browser does not support the video tag.
+	</video>
+	<script src="onboarding.js"></script>
+</body>
+
+</html>
+<style>
+	body {
+		background-color: #f1f1f1;
+		font-family: Montserrat, "Helvetica Neue", Arial, sans-serif;
+		-webkit-font-smoothing: antialiased;
+		font-size: 14px;
+		line-height: 1.42857143;
+		text-align: center;
+		color: #333;
+		margin: 30px;
+		padding: 0;
+	}
+
+	.notice {
+		background-color: #ce1c1c;
+		color: #fff;
+		padding: 10px;
+		font-size: 12px;
+		display: block;
+		width: 720px;
+		margin: 0 auto;
+	}
+
+
+	video {
+		display: block;
+		margin: 0 auto;
+	}
+
+	img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 20px;
+	}
+
+	.large-button {
+		clear: both;
+		background-color: #0077b5;
+		border-radius: 4px;
+		color: #fff;
+		cursor: pointer;
+		display: inline-block;
+		font-size: 1.5em;
+		font-weight: 300;
+		margin: 0;
+		padding: 0.5em 1em;
+		text-align: center;
+		text-decoration: none;
+		transition: background-color 0.2s ease-in-out;
+		margin-top: 15px;
+	}
+
+	.large-button:hover {
+		background-color: #006097;
+	}
+</style>
